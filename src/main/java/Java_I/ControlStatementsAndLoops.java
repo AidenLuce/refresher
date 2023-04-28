@@ -41,6 +41,51 @@ public class ControlStatementsAndLoops {
                 System.out.println(r);
             }
         }
+        FibonacciScanner();
+        FizzBuzz();
+
+    }
+    static void Fibonacci(long number){
+        long num1=0, num2=1;
+        long counter = 0;
+
+        while(counter < number){
+            System.out.printf(num1 + " ");
+            long num3 = num1 +num2;
+            num1 = num2;
+            num2 = num3;
+            counter++;
+        }
+    }
+    static void FibonacciScanner(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("How many times would you like the Fibonacci sequence to run?\n");
+        long input = scanner.nextLong();
+
+        long num1 =0, num2=1;
+        long counter = 0;
+
+        while (counter < input){
+            System.out.println(num1 + " ");
+            long num3 = num1 + num2;
+            num1 = num2;
+            num2 = num3;
+            counter++;
+        }
+    }
+    static void FizzBuzz(){
+        for(long i=1; i<100; i++){
+            if(i % 5 == 0 && i % 3==0 ){
+                System.out.println("FIZZBUZZ");
+            } else if(i % 5== 0){
+                System.out.println("buzz");
+            } else if (i%3==0){
+                System.out.println("fizz");
+            }else{
+                System.out.println(i);
+            }
+        }
+
 
     }
 }
