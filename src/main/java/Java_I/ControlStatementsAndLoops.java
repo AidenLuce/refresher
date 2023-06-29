@@ -41,8 +41,10 @@ public class ControlStatementsAndLoops {
                 System.out.println(r);
             }
         }
-        FibonacciScanner();
-        FizzBuzz();
+//        FibonacciScanner();
+//        FizzBuzz();
+//        testing(20);
+        input();
 
     }
     static void Fibonacci(long number){
@@ -87,5 +89,37 @@ public class ControlStatementsAndLoops {
         }
 
 
+
+
     }
+    static void testing(int num){
+        int num1=0, num2=1;
+        int counter = 0;
+        while (counter<num){
+            System.out.println(num1 + " ");
+            int num3 = num1 + num2;
+            num1=num2;
+            num2=num3;
+            counter++;
+        }
+    }
+
+    static void speed (int i){
+        int num1=0, num2=1;
+        int counter =0;
+        while(counter <i){
+            System.out.println(num1+" ");
+            int num3 = num1+num2;
+            num1= num2;
+            num2= num3;
+            counter++;
+        }
+    }
+    static void input(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("input:");
+        long input = scanner.nextLong();
+        System.out.println(input+10);
+    }
+
 }
