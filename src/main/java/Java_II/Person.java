@@ -15,9 +15,12 @@ public class Person {
     public void sayHello(String name){
         System.out.printf("Hello %s!",name);
     }
+    public Person(String nameStr2){
+        this.name = nameStr2;
+    }
 
     public static void main(String[] args) {
-        Person me = new Person();
+        Person me = new Person("");
         me.setName("aiden");
         System.out.println(me.getName());
         System.out.println("Hello " + me.getName());

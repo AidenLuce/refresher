@@ -13,6 +13,10 @@ public class Input {
         return this.scanner.nextLine();
     }
 
+    public String getString(String input){
+        return this.scanner.nextLine();
+    }
+
     public boolean yesNo(){
         System.out.println("Yes or No: ");
         String s1 = getString();
