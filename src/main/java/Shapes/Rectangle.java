@@ -18,7 +18,7 @@ public class Rectangle {
         return (length * width);
     }
     public double getPerimeter(){
-        return (length + width *2);
+        return ((length + width) *2);
     }
 
     public static void main(String[] args) {
